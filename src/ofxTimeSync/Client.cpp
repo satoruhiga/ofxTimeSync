@@ -1,6 +1,6 @@
 #include "Client.h"
 
-namespace ofxTimestamp {
+namespace ofxTimeSync {
 		
 	void Client::connect(const std::string& addr, int port)
 	{

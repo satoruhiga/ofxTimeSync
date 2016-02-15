@@ -10,7 +10,7 @@
 #include <memory>
 #include <string>
 
-namespace ofxTimestamp {
+namespace ofxTimeSync {
 	using dex::timestamp_t;
 
 	inline std::string to_string(timestamp_t t) {

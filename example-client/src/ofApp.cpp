@@ -17,14 +17,14 @@ void ofApp::update(){
 void ofApp::draw(){
 	try 
 	{
-		ofxTimestamp::timestamp_t p = client.getTimestampPhase();
-		ofxTimestamp::timestamp_t l = client.getLocalTimestamp();
-		ofxTimestamp::timestamp_t t = l + p;
+		ofxTimeSync::timestamp_t p = client.getTimestampPhase();
+		ofxTimeSync::timestamp_t l = client.getLocalTimestamp();
+		ofxTimeSync::timestamp_t t = l + p;
 		std::stringstream ss;
 		ss << "Port: 6666" << endl;
-		ss << "local timestamp: " << ofxTimestamp::to_string(l) << endl;
-		ss << "timestamp phase: " << ofxTimestamp::to_string(p) << endl;
-		ss << "timestamp: " << ofxTimestamp::to_string(t) << endl;
+		ss << "local timestamp: " << ofxTimeSync::to_string(l) << endl;
+		ss << "timestamp phase: " << ofxTimeSync::to_string(p) << endl;
+		ss << "timestamp: " << ofxTimeSync::to_string(t) << endl;
 		
 		ofDrawBitmapString(ss.str(), 10, 20);
 	}

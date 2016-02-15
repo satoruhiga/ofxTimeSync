@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 
-#include "ofxTimestamp.h"
+#include "ofxTimeSync.h"
 
 class ofApp : public ofBaseApp{
 
@@ -23,5 +23,5 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
-		ofxTimestamp::Server server;
+		ofxTimeSync::Server server;
 };

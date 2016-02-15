@@ -1,6 +1,6 @@
 #include "Server.h"
 
-namespace ofxTimestamp {
+namespace ofxTimeSync {
 
 	void Server::init(int port)
 	{
@@ -15,7 +15,7 @@ namespace ofxTimestamp {
 		return dex::HighResolutionClock::instance().getValue();
 	}
 	
-	std::string ofxTimestamp::Server::getTimestampString()
+	std::string ofxTimeSync::Server::getTimestampString()
 	{
 		return dex::Timestamp::timestampToString(getTimestamp());
 	}

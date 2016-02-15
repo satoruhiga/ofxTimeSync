@@ -1,8 +1,8 @@
 #pragma once
 
-#include "ofxTimestamp/Common.h"
+#include "ofxTimeSync/Common.h"
 
-namespace ofxTimestamp {
+namespace ofxTimeSync {
 	class Server
 	{
 	public:
